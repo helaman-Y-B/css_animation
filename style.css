@@ -1,0 +1,32 @@
+@keyframes myanima {
+
+    0% {background-color: azure; left: 0px; top: 0px; border-style: dashed;}
+    25% {background-color: rgb(238, 248, 217); left: 50px; top: 0px; border-style: dotted; width: 75%;}
+    50% {background-color: rgb(175, 175, 247); left: 50px; top: 50px; border-style: double; height: 50%;}
+    75% {background-color: rgb(181, 186, 196); left: 0px; top: 50px; border-style: groove; width: 50%;}
+    100% {background-color: azure; left: 0px; top: 0px; border-style: dashed; height: 75%;}
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    width: 50%;
+    height: 75%;
+    background-color: azure;
+    border-radius: 15px;
+    border-style: dashed;
+    animation: myanima 3s infinite alternate;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
